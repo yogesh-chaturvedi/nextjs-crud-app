@@ -1,14 +1,12 @@
 "use client";
 
+export const dynamic = "force-dynamic";
+
 import React, { useEffect, useState } from 'react'
 import UsersCard from '../components/UsersCard';
-import { useRouter, useSearchParams } from 'next/navigation';
 
 const page = () => {
 
-  let searchParams = useSearchParams()
-  let deleteId = searchParams.get("deleteId")
-  let router = useRouter()
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
@@ -18,15 +16,8 @@ const page = () => {
         let res = await fetch("https://jsonplaceholder.typicode.com/users")
 
         const data = await res.json();
+        setUsers(data);
 
-        if (deleteId) {
-          setUsers(data.filter(u => u.id !== Number(deleteId)));
-
-          router.replace('/users')
-        }
-        else {
-          setUsers(data);
-        }
       }
       catch (error) {
         console.error("fetchAllUsers failed", error);

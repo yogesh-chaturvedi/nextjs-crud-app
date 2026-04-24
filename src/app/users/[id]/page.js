@@ -65,7 +65,7 @@ const page = ({ params }) => {
   // function to delete user
   async function handleDelete() {
 
-    router.push(`/users?deleteId=${id}`)
+    router.push(`/users`)
 
     try {
       let res = await fetch(`https://jsonplaceholder.typicode.com/users/${id}`, {
