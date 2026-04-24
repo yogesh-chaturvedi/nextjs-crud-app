@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [Next.js](https://nextjs.org) assignment project,,,, bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## Next.js User CRUD App
 
+A simple User Management (CRUD) application built using Next.js (App Router) and JSONPlaceholder API.
+
+
+## 📌 Features
+
+- View all users
+- View individual user details
+- Update user information (Optimistic UI)
+- Delete user (Optimistic UI)
+- Dynamic routing using Next.js App Router
+
+
+## 🛠 Tech Stack
+- Next.js (App Router)
+- React
+- JavaScript
+- Fetch API
+
+
+## 🌐 API Used
+
+Base URL:
+https://jsonplaceholder.typicode.com
+
+Endpoints used:
+
+- GET /users
+- GET /users/
+- PUT /users/
+- DELETE /users/
+
+⚠️ Note: This is a fake API. Changes are not persisted after refresh.
 First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 📁 Project Structure
+
+```
+src/
+├── app/
+│ ├── users/
+│ │ ├── page.js
+│ │ ├── [id]/page.js
+│ ├── components/
+│ │ ├── Navbar.jsx
+│ │ ├── UsersCard.jsx
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ⚡ Getting Started
+1. Clone the repository
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+   git clone https://github.com/yogesh-chaturvedi/nextjs-crud-app.git
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. Navigate to project
 
-## Learn More
+   cd nextjs-crud-app
 
-To learn more about Next.js, take a look at the following resources:
+3. Install dependencies
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   npm install
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+4. Run the development server
 
-## Deploy on Vercel
+   npm run dev
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+5. Open in browser
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   http://localhost:3000/users
+
+
+## 🌍 Live Demo
+
+👉 Add your deployed link here (Vercel)
+
+## Author
+
+Yogesh Chaturvedi
