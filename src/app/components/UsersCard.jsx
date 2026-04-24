@@ -21,7 +21,7 @@ const UsersCard = ({ userData }) => {
 
             <button
                 onClick={() => { handleView(userData) }}
-                className="w-full bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-lg transition"
+                className="w-full bg-blue-500 hover:bg-blue-600 cursor-pointer text-white font-medium py-2 px-4 rounded-lg transition"
             >
                 View
             </button>

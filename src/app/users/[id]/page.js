@@ -127,7 +127,7 @@ const page = ({ params }) => {
           <button
             disabled={loading}
             type="submit"
-            className="w-full bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 rounded-lg transition duration-300"
+            className="w-full bg-blue-500 hover:bg-blue-600 text-white cursor-pointer font-medium py-2 rounded-lg transition duration-300"
           >
             {loading ? "Saving..." : "Save Changes"}
           </button>
@@ -153,14 +153,14 @@ const page = ({ params }) => {
         <div className='flex gap-5 justify-between'>
           <button
             onClick={() => setIsEditing(true)}
-            className="mt-6 w-full bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-lg transition duration-300"
+            className="mt-6 w-full bg-blue-500 hover:bg-blue-600 cursor-pointer text-white font-medium py-2 px-4 rounded-lg transition duration-300"
           >
             Update
           </button>
 
           <button
             onClick={() => { handleDelete() }}
-            className="mt-6 w-full bg-red-500 hover:bg-red-600 text-white font-medium py-2 px-4 rounded-lg transition duration-300"
+            className="mt-6 w-full bg-red-500 hover:bg-red-600 cursor-pointer text-white font-medium py-2 px-4 rounded-lg transition duration-300"
           >
             Delete
           </button>
